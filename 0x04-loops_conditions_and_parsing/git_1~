@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+s=2
+randomNumber=$(( $RANDOM % 50 ))
+git add $x;
+git commit -m 'fixing $randomNumber ';
+git push;
+s=$(( s +1 ))

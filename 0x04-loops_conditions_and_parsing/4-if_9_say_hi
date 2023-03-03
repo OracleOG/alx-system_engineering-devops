@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# prints 'Best School' ten times but for the 9th iteration it adds 'Hi' on a new line
+
+x='Best School'
+y=0
+z='Hi'
+
+while [ $y -lt 10 ]; do
+    echo "$x"
+    if [ $y -eq 8 ]
+    then echo "$z" 
+    fi
+	 y=$(( y +1 ))
+    done
