@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# print 'Best School' with the until loop
+
+x=0
+y='Best School'
+
+until [ $x -eq 10 ]; do
+      echo "$y"
+      x=$(( x +1 ))
+done
