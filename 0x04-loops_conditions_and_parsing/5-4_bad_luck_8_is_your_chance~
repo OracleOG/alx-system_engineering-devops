@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# displays "bad luck" for the 4th loop iteration
+# displays "good luck" for the 8th loop iteration
+# displays "Best School" for the other iterations
+
+s="bad luck"
+t="good luck"
+u="Best School"
+v=0
+
+while [ $v -lt 10 ]; do
+if [ $v -eq 3 ]
+then
+echo "$s"
+elif [ $v -eq 7 ]
+then
+echo "$t"
+else
+echo "$u"
+fi
+done
