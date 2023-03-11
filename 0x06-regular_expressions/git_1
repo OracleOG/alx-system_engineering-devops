@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# scripts automatically commits a file to my git hub repository
+
+echo "Name of file you want to commit"
+read -r x
+randomNumber=$( shuf -i 1-50 -n1 )
+git add "$x";
+git commit -m "fixing $randomNumber ";
+git push;
+
