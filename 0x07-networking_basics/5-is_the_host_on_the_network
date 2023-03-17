@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# testing the ping command
+
+if [ "$#" -lt "1" ]
+then
+echo "usage: 5-is_the_host_on_the_network {IP-ADDRESS}"
+else
+ping "$1" -c 5
+fi
