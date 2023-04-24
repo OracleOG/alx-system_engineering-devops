@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # script that uses ssh to connect to a server remotely with a private key
 
-ssh-copy-id ubuntu@100.25.222.208;
-yes;
-ssh ubuntu@100.25.222.208;
+ssh -i ~/.ssh/holberton ubuntu@35.231.33.237
+
