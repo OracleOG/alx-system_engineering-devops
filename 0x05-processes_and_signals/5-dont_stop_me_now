@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#stops the process 4-to_infinity_and_beyond
+
+# Use pgrep to find the PID of the process
+pid_list=$(pgrep -f "bash.*4-to_infinity_and_beyond")
+for pid in $pid_list; do
+    kill "$pid"
+
+done
