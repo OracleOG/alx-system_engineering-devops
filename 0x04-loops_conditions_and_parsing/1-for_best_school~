@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-#Bash script that prints the string "best school" 10 times on the standard output
-
-for n in {1..10}: do
-	 echo "Best School"
-done

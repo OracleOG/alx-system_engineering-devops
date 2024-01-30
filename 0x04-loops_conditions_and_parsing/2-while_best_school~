@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-#script that prints out 'Best School' using the while loop
-
-x=0
-y="Best School"
-while [$x<10]; do
-echo "$y"
-done

@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# prints 'Best School' ten times but for the 9th iteration it adds 'Hi' on a new line
-
-x='Best School'
-y=0
-z='Hi'
-
-while 
