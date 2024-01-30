@@ -3,7 +3,7 @@
 
 for file in *; do
     if [[ ! $file =~ ^/. ]]; then
-        format_ls=$(echo $file | cut -d '-' -f 2-)
+        format_ls=$(echo "$file" | cut -d '-' -f 2-)
         echo "$format_ls"
     fi
 done
