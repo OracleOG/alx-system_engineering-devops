@@ -7,9 +7,9 @@ include python
 class { 'flask_install':
   # Ensure flask package is installed with pip3 and specify version
   package { 'flask':
-    ensure => installed,
+    ensure   => installed,
     provider => 'pip3',
-    require => Class['python'],
-    version => '2.1.0',
+    require  => Class['python'],
+    version  => '2.1.0',
   }
 }
