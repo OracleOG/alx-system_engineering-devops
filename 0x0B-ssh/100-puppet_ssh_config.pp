@@ -1,3 +1,5 @@
+# automates the config process
+
 file { '~/.ssh/config':
   ensure  => file,
   mode    => '0600',
