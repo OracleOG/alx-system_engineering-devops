@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#return a page that contains 'Hello Holberton' from apache
+
+sudo apt-get update
+sudo apt-get install apache2
+
+echo "Hello Holberton" | sudo tee /var/www/html/index.html
+
+sudo systemctl restart apache2
