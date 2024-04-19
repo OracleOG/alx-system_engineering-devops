@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Script that configures the nginx file with sed
 chmod 777 /etc/nginx/nginx.conf
-sed -i 's/user\s\+[^;]\+/user nginx;/' /etc/nginx/nginx.conf
-sed -i 's/listen\s\+80\s\+default_server;/listen 8080 default_server;/g' /etc/nginx/sites-available/default
+chown nginx:nginx /etc/nginx/nginx.conf
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
 service nginx restart
