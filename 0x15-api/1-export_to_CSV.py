@@ -21,7 +21,6 @@ if __name__ == '__main__':
             comp_todo.append(todo)
     total_todo = len(response)
     completed = len(comp_todo)
-
     name = None
     for i in response2:
         if i['id'] == user_id:

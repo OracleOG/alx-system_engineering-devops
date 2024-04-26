@@ -22,7 +22,7 @@ if __name__ == '__main__':
     total_todo = len(response)
     completed = len(comp_todo)
     print(f"Employee {response2[0]['name']} is done with tasks"
-      f"({completed}/{total_todo}):")
+          f"({completed}/{total_todo}):")
 
     for x in comp_todo:
         print(f'\t {x["title"]}')

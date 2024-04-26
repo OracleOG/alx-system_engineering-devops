@@ -25,15 +25,11 @@ if __name__ == '__main__':
 
     formatted_data = {
             user_id: [{"task": i["title"],
-                            "completed": i["completed"],
-                            "username": name}
-                            for i in response if i['userId'] == user_id]
+                       "completed": i["completed"],
+                       "username": name}
+                      for i in response if i['userId'] == user_id]
         }
-    print(formatted_data)
-    json_string = json.dumps(formatted_data, indent=4)
-    print()
-    print()
-    print(json_string)
+    json_string = json.dumps(formatted_data)
 
     with open(filename, 'w+') as f:
         f.write(json_string)
