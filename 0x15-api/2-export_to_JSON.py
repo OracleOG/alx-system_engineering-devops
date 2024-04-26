@@ -19,7 +19,7 @@ if __name__ == '__main__':
     name = None
     for i in response2:
         if i['id'] == user_id:
-            name = i['name']
+            name = i['username']
 
     filename = f'{user_id}.json'
 
