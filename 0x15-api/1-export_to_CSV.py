@@ -14,13 +14,7 @@ if __name__ == '__main__':
     response2 = requests.get(user_url)
     response = response.json()
     response2 = response2.json()
-    comp_todo = []
 
-    for todo in response:
-        if todo['completed']:
-            comp_todo.append(todo)
-    total_todo = len(response)
-    completed = len(comp_todo)
     name = None
     for i in response2:
         if i['id'] == user_id:
@@ -31,4 +25,4 @@ if __name__ == '__main__':
     with open(filename, 'w+') as f:
         for i in response:
             f.write(f'"{i["userId"]}","{name}",'
-                    f'"{i["completed"]}","{i["title"]}"')
+                    f'"{i["completed"]}","{i["title"]}"\n')

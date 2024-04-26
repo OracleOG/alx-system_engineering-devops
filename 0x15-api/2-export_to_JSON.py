@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 ''' Script that uses rest API to return a todo list'''
+import json
 import requests
 import sys
-import json
 
 
 if __name__ == '__main__':
