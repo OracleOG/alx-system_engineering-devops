@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+# Script that configures ufw on server to allow rerouting of ports
 sudo apt update
 sudo apt install ufw
 sudo ufw enable
